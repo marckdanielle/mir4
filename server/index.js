@@ -14,8 +14,8 @@ const db = mysql.createConnection({
 	database: "mir4"
 });
 
-const _dirname = path.dirname("");
-const buildPath = path.join(_dirname, '../client/build');
+const __dirname = path.dirname("");
+const buildPath = path.join(__dirname, '../client/build');
 
 app.use(express.static(buildPath))
 
